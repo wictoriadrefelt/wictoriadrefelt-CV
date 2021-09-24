@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
-    <script src="func.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript"></script> 
+
+    <script src="func.js" type="text/javascript"></script>
     <title>MyPage</title>
 </head>
 
@@ -15,18 +16,17 @@
     <section>
     <div class="info-container">
        <div class="menu">
-        <audio src="ambiance.wav" id="audio1" autoplay onplay="handleFirstPlay(event)"></audio>
-        <audio src="ambiance.wav" autoplay>
+        <audio src="sounds/ambiance.wav" id="audio1" autoplay onplay="handleFirstPlay(event)"></audio>
+        <audio src="sounds/ambiance.wav" autoplay>
         <class="button" onclick="document.getElementById('audio1').pause()" type="button" >Stop Me!</button>
         </audio>
-        <script src="func.js"></script>
            <div class="date">Date</div>
            <div class="name">Wic</div>
            <a href="#footer1">Jump to details</a>
            <div class="contact-info">
                <a href="mailto: wictoria.soderlunddrefeldt@gmail.com">
                    Wictoria.soderlunddrefeldt@gmail.com</a>
-               <a href="https://www.google.com"> <img src="linkedin.jfif" id="linkedin-logo" alt="LinkedIn"></a>
+               <a href="https://www.google.com"> <img src="images/linkedin.jfif" id="linkedin-logo" alt="LinkedIn"></a>
            </div>
         </div>
     </div>
@@ -50,15 +50,16 @@
         <ul>
             <li>
                 <img src="#" alt="person">
-                <blockquote>Lorem Ipsum</blockquote>
-                <cite>Jane Doe</cite>
+                <blockquote id="divToShowHide" class="BeforeScroll">Lorem Ipsum</blockquote>
+                <blockquote class="AfterScroll">Lorem Ipsum</blockquote>
+                <cite>wo</cite>
             </li>
         </ul>
 
 
 <section>
     <div class="contact-info">
-        <p>Lor</p>
+        <a href="next.html">For contact info</a>
     </div>
 </section>
 
@@ -70,7 +71,6 @@
 </footer>
 
    
-
-
+<script src="func.js"></script>
 </body>
 </html>
